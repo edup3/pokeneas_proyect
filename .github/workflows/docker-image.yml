@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag edup36/flask-randomquotes:latest
+      run: docker build . --file Dockerfile --tag edup36/pokeneas:latest
       
     - name: Docker Push
-      run: docker push edup36/flask-randomquotes
+      run: docker push edup36/pokeneas
