@@ -22,7 +22,7 @@ pokeneas = [
 @app.route('/json/pokenea')
 def get_random_pokenea():
     pokenea = random.choice(pokeneas)
-    container_id = os.uname[1]
+    container_id = os.uname()[1]
     return jsonify(name=pokenea, container=container_id)
 
 
